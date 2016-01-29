@@ -17,6 +17,25 @@ Pizza.prototype.price = function() {
 }
 
 
+
+$(document).ready(function(){
+
+
+  $("form#new-pizza").submit(function(event){
+    event.preventDefault();
+    debugger;
+    var pizzaSize = $("#pizzaSize").val();
+    var newPizza = new Pizza (pizzaSize);
+    var meatToppings = $("input:checkbox:checked.meat").map(function() {
+      newPizza.meatToppings.push((this).value);
+    })
+
+  })
+
+})
+// return this.value;
+// $("#meat input:checkbox:checked").each(function(){
+//
 // function Contact(firstName, lastName) {
 //   this.firstName = firstName;
 //   this.lastName = lastName;
