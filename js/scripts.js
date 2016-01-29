@@ -5,11 +5,14 @@ function Pizza(size){
 }
 
 Pizza.prototype.price = function() {
-  if (this.size = "large"){
+  if (this.size === "large"){
     return(20 + this.meatToppings.length*2 + this.vegToppings*1)
   }
-  else{
-    return(15 + this.meatToppings.length*1 +this.vegToppings*.5)
+  else if (this.size = "medium"){
+    return(17 + this.meatToppings.length*1.5 +this.vegToppings*.75)
+  }
+  else {
+    return(14 + this.meatToppings.length*1 + this.vegToppings*.5)
   }
 }
 
