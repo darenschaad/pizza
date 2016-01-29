@@ -1,22 +1,22 @@
-#Address Book
+#Daren's Pizzeria
 
-###By: Daren 
+###By: Daren Schaad
 
 ##Description
 
-Ping Pong is an application for testing or demonstrating basic proficiency in Javascript, jQuery, git, Markdown, HTML, Bootstrap, CSS, and Behavior Driven Development. A user can enter a number, and the application returns a range of numbers from 1 to the number entered with the following exceptions:
+Daren's Pizzeria is a website that mimics a real pizza restaurant's website where you can order items online for delivery or pick up.  The site is intended to help us to learn to work with objects in Javascript.
 
-- Numbers divisible by 3 are replaced with the word "ping"
-- Numbers divisible by 5 are replaced with the word "pong"
-- Numbers divisible by 15 are replaced with the word "ping pong"
+- Small pizza's and large pizza's have a base price (includes sauce and cheese).
+- Added toppings cost extra
+- Delivery costs extra as well
 
 ##Installation
 
 Install ping-pong locally by cloning this repository:
 
-https://github.com/pokojt/ping-pong.git
+https://github.com/darenschaad/pizza.git
 
-Or, you can run the application [here](http://pokojt.github.io/ping-pong).
+Or, you can run the application [here](http://darenschaad.github.io/pizza).
 
 ##Technologies Used
 
@@ -27,9 +27,10 @@ Or, you can run the application [here](http://pokojt.github.io/ping-pong).
 - jQuery
 - Git, gitHub, gitHub Pages
 - BDD
+- Object Oriented Programming
 
 ##Copyright (c)
 
- Copyright 2016 Taylor Pokoj.
+ Copyright 2016 Daren Schaad.
 
- This software is licensed under the MIT license.
+ This software is licensed under the Epicodus license.
