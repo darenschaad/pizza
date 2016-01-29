@@ -25,9 +25,9 @@
               <h3>Pick a size:</h3>
               <select name="pizzaSize" id="pizzaSize">
                   <option></option>
-                  <option value="large">Large - 16" Diameter</option>
-                  <option value="medium">Medium - 14" Diameter</option>
-                  <option value="small">Small - 10" Diameter</option>
+                  <option value="Large">Large - 16" Diameter</option>
+                  <option value="Medium">Medium - 14" Diameter</option>
+                  <option value="Small">Small - 10" Diameter</option>
               </select>
             </div>
             <div class="toppingsAligned">
@@ -37,13 +37,13 @@
               <div id="meat">
 
                 <div class="checkbox">
-                  <label><input type="checkbox" class="meat" value="pepperoni">Pepperoni</label>
+                  <label><input type="checkbox" class="meat" value="Pepperoni">Pepperoni</label>
                 </div>
                 <div class="checkbox">
-                  <label><input type="checkbox" class="meat" value="salami">Salami</label>
+                  <label><input type="checkbox" class="meat" value="Salami">Salami</label>
                 </div>
                 <div class="checkbox">
-                  <label><input type="checkbox" class="meat" value="sausage">Sausage</label>
+                  <label><input type="checkbox" class="meat" value="Sausage">Sausage</label>
                 </div>
                 <div class="checkbox">
                   <label><input type="checkbox" class="meat" value="Ham">Ham</label>
@@ -55,7 +55,7 @@
                   <label><input type="checkbox" class="meat" value="Linguica">Linguica</label>
                 </div>
                 <div class="checkbox">
-                  <label><input type="checkbox" class="meat" value="spicySausage">Sausage</label>
+                  <label><input type="checkbox" class="meat" value="Spicy Sausage">Spicy Sausage</label>
                 </div>
               </div>
             </div>
@@ -63,36 +63,41 @@
               <div id="veg">
                 <div class="">
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="mushrooms">Mushrooms</label>
+                    <label><input type="checkbox" class="veg" value="Mushrooms">Mushrooms</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="olives">Olives</label>
+                    <label><input type="checkbox" class="veg" value="Olives">Olives</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="greenPeppers">Green Peppers</label>
+                    <label><input type="checkbox" class="veg" value="Green Peppers">Green Peppers</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="mushrooms">Mushrooms</label>
+                    <label><input type="checkbox" class="veg" value="Pineapple">Pineapple</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="olives">Olives</label>
+                    <label><input type="checkbox" class="veg" value="Spinach">Spinach</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="">Green Peppers</label>
+                    <label><input type="checkbox" class="veg" value="Red Onions">Red Onions</label>
                   </div>
                   <div class="checkbox">
-                    <label><input type="checkbox" class="veg" value="">Green Peppers</label>
+                    <label><input type="checkbox" class="veg" value="Rosted Red Peppers">Rosted Red Peppers</label>
                   </div>
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Place Order</button>
+            <button type="submit" class="btn btn-primary">Compile Pizza</button>
 
-            <span class="btn btn-success" id="add-address">Add Pizza</span>
-            <h2>List of pizza's:</h2>
-            <ul id="pizzas">
 
-            </ul>
+            <h2>List of Compiled Pizza's:</h2>
+            <div class="checkout">
+              <h4>Click on a pizza below to see details</h4>
+              <ul id="pizzas">
+
+              </ul>
+
+              <span class="btn btn-success" id="add-address">Proceed to Checkout</span>
+            </div>
         </div>
 
 

@@ -13,3 +13,7 @@
 .contact:hover {
   text-decoration: underline;
 }
+
+.checkout {
+  display: none;
+}
