@@ -29,8 +29,12 @@ $(document).ready(function(){
     var meatToppings = $("input:checkbox:checked.meat").map(function() {
       newPizza.meatToppings.push((this).value);
     })
-
+    var vegToppings = $("input:checkbox:checked.veg").map(function() {
+      newPizza.vegToppings.push((this).value);
+    })
+    $("ul#pizzas").append("<li><span class ='contact'>" + newPizza.size + "</span></li>");
   })
+
 
 })
 // return this.value;
