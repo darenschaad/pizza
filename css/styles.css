@@ -1,5 +1,8 @@
-#show-contact {
+#show-pizza {
   display: none;
+}
+.toppingsAligned {
+  text-align: center;
 }
 
 .contact {

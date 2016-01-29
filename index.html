@@ -6,14 +6,14 @@
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
-    <title>Address Book</title>
+    <title>Daren's Pizzeria</title>
   </head>
   <body>
     <div class="container">
       <h2>Daren's Pizzeria!</h2>
       <div class="row">
-        <div class="col-md-6">
-          <p class="lead">Please enter the contact information here:</p>
+        <div class="col-sm-6">
+          <p class="lead">Please enter your information:</p>
           <form id="new-contact">
             <div class="form-group">
               <label for="inputtedFirstName">First Name:</label>
@@ -21,38 +21,84 @@
               <label for="inputtedLastName">Last Name:</label>
               <input id="inputtedLastName" type="text">
             </div>
+            <div class="pizzaSize">
+              <h3>Pick a size:</h3>
+              <select name="pizzaSize" id="pizzaSize">
+                  <option></option>
+                  <option value="large">Large - 16" Diameter</option>
+                  <option value="medium">Medium - 14" Diameter</option>
+                  <option value="small">Small - 10" Diameter</option>
+              </select>
+            </div>
+            <div class="toppingsAligned">
+              <h3>Add Toppings:</h3>
+            </div>
+            <div class="col-sm-6">
+              <div class="meat">
 
-            <!-- <div id="new-addresses">
-              <div class="new-address">
-                <div class="form-group">
-                  <label for="new-type">Address Type</label>
-                  <input type="text" class="form-control new-type">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="pepperoni">Pepperoni</label>
                 </div>
-                <div class="form-group">
-                  <label for="new-street">Street</label>
-                  <input type="text" class="form-control new-street">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="salami">Salami</label>
                 </div>
-                <div class="form-group">
-                  <label for="new-city">City</label>
-                  <input type="text" class="form-control new-city">
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="Sausage" disabled>Sausage</label>
                 </div>
-                <div class="form-group">
-                  <label for="new-state">State</label>
-                  <input type="text" class="form-control new-state">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="salami">Ham</label>
+                </div>
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="Sausage" disabled>Bacon</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="salami">Linguica</label>
+                </div>
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="Sausage" disabled>Sausage</label>
                 </div>
               </div>
-            </div> -->
-
+            </div>
+            <div class="col-sm-6">
+              <div class="veg">
+                <div class="">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="olives">Olives</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Green Peppers</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="olives">Olives</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Green Peppers</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Green Peppers</label>
+                  </div>
+                </div>
+              </div>
+            </div>
             <button type="submit" class="btn btn-primary">Place Order</button>
 
             <span class="btn btn-success" id="add-address">Add Pizza</span>
+            <h2>List of pizza's:</h2>
+            <ul id="pizzas">
+
+            </ul>
+        </div>
+
 
           </form>
-          <h2>List of pizza's:</h2>
-          <ul id="pizzas">
 
-          </ul>
-        </div>
+
         <div class="col-md-6">
           <div id="show-pizza">
             <h2></h2>
@@ -72,3 +118,24 @@
 
   </body>
 </html>
+
+<!-- <div id="new-addresses">
+  <div class="new-address">
+    <div class="form-group">
+      <label for="new-type">Address Type</label>
+      <input type="text" class="form-control new-type">
+    </div>
+    <div class="form-group">
+      <label for="new-street">Street</label>
+      <input type="text" class="form-control new-street">
+    </div>
+    <div class="form-group">
+      <label for="new-city">City</label>
+      <input type="text" class="form-control new-city">
+    </div>
+    <div class="form-group">
+      <label for="new-state">State</label>
+      <input type="text" class="form-control new-state">
+    </div>
+  </div>
+</div> -->
