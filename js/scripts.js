@@ -1,8 +1,17 @@
 function Pizza(size){
   this.size = size;
-  this.toppings = [];
+  this.meatToppings = [];
+  this.vegToppings = [];
 }
 
+Pizza.prototype.price = function() {
+  if (this.size = "large"){
+    return(20 + this.meatToppings.length*2 + this.vegToppings*1)
+  }
+  else{
+    return(15 + this.meatToppings.length*1 +this.vegToppings*.5)
+  }
+}
 
 
 // function Contact(firstName, lastName) {
