@@ -1,3 +1,13 @@
+function Contact(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.addresses = [];
+};
+
+Contact.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+};
+
 function Pizza(size){
   this.size = size;
   this.meatToppings = [];
@@ -15,6 +25,8 @@ Pizza.prototype.price = function() {
     return((14 + (this.meatToppings.length)*1 + (this.vegToppings.length)*.50).toFixed(2));
   }
 }
+
+
 
 $(document).ready(function(){
 
@@ -34,8 +46,14 @@ $(document).ready(function(){
     $("ul#pizzas").append("<li><span class ='pizza'>" + newPizza.size + " Pizza - " + "$" + newPizza.price() + "</span></li>");
     $(".checkout").show();
 
-    var totalCost
-    $("h4#cost").append()
+    var totalAmount = function(newPizza) {
+      var totalCost = 0;
+      totalCost += parseInt(newPizza.price());
+      return totalCost;
+    }
+
+    $("#cost").text(totalAmount(newPizza));
+
 
     $(".pizza").last().click(function() {
       $("#show-pizza").show();

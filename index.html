@@ -16,10 +16,10 @@
           <p class="lead">Please enter your information:</p>
           <form id="new-pizza">
             <div class="form-group">
-              <label for="inputtedFirstName">First Name:</label>
-              <input id="inputtedFirstName" type="text">
-              <label for="inputtedLastName">Last Name:</label>
-              <input id="inputtedLastName" type="text">
+              <label for="inputtedFirstName">First Name: <input id="inputtedFirstName" type="text"></label>
+
+              <label for="inputtedLastName">Last Name: <input id="inputtedLastName" type="text"></label>
+
             </div>
             <div class="pizzaSize">
               <h3>Pick a size:</h3>
@@ -90,12 +90,12 @@
 
             <h2>List of Compiled Pizza's:</h2>
             <div class="checkout">
+              <h3>Pizza Order for </h3>
               <h4>Click on a pizza below to see details</h4>
               <ul id="pizzas">
 
               </ul>
-              <h4 id = "cost">Total: $ </h4>
-              <span class="btn btn-success" id="add-address">Proceed to Checkout</span>
+              <h4>Total: $ <span id = "cost"></span></h4>
             </div>
           </form>
         </div>
@@ -105,10 +105,6 @@
             <p>Meat Toppings: <span class="meatToppings"</span></p>
             <p>Veggie Toppings: <span class="vegToppings"</span></p>
             <p>Price: $ <span class="price"</span></p>
-            <!-- <p>Addresses: </p>
-            <ul id="addresses">
-
-            </ul> -->
           </div>
         </div>
       </div>
@@ -116,24 +112,3 @@
     <footer></footer>
   </body>
 </html>
-
-<!-- <div id="new-addresses">
-  <div class="new-address">
-    <div class="form-group">
-      <label for="new-type">Address Type</label>
-      <input type="text" class="form-control new-type">
-    </div>
-    <div class="form-group">
-      <label for="new-street">Street</label>
-      <input type="text" class="form-control new-street">
-    </div>
-    <div class="form-group">
-      <label for="new-city">City</label>
-      <input type="text" class="form-control new-city">
-    </div>
-    <div class="form-group">
-      <label for="new-state">State</label>
-      <input type="text" class="form-control new-state">
-    </div>
-  </div>
-</div> -->
