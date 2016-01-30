@@ -1,7 +1,6 @@
 function Contact(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.addresses = [];
 };
 
 Contact.prototype.fullName = function() {
@@ -26,13 +25,12 @@ Pizza.prototype.price = function() {
   }
 }
 
-
-
 $(document).ready(function(){
-
 
   $("form#new-pizza").submit(function(event){
     event.preventDefault();
+    $(".meat").attr("checked", false);
+    $(".veg").attr("checked", false);
     var pizzaSize = $("#pizzaSize").val();
     var newPizza = new Pizza (pizzaSize);
     var meatToppings = $("input:checkbox:checked.meat").map(function() {
@@ -42,6 +40,10 @@ $(document).ready(function(){
     var vegToppings = $("input:checkbox:checked.veg").map(function() {
       newPizza.vegToppings.push((this).value);
     })
+    var inputtedFirstName = $("input#inputtedFirstName").val();
+    var inputtedLastName = $("input#inputtedLastName").val();
+    var newContact = new Contact (inputtedFirstName, inputtedLastName);
+    $("span#insert").empty().append(newContact.fullName());
 
     $("ul#pizzas").append("<li><span class ='pizza'>" + newPizza.size + " Pizza - " + "$" + newPizza.price() + "</span></li>");
     $(".checkout").show();
@@ -52,9 +54,6 @@ $(document).ready(function(){
       return totalCost;
     }
 
-    $("#cost").text(totalAmount(newPizza));
-
-
     $(".pizza").last().click(function() {
       $("#show-pizza").show();
       $("#show-pizza h2").text(newPizza.size);
@@ -62,10 +61,5 @@ $(document).ready(function(){
       $(".vegToppings").text(newPizza.vegToppings);
       $(".price").text(newPizza.price());
     })
-
-
-
   })
-
-
 })
